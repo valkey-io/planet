@@ -42,7 +42,7 @@ touch $log_file
 touch $err_file
 
 # Run things, with logging.
-{ 
+{
   epoch_start="$(date +%s)"
 
   echo "$(date) - running pluto update."
