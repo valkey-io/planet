@@ -63,7 +63,7 @@
       <%= link_to '',  feed.feed_url, :class => "icon-rss-sign" %>
       <%= link_to feed.title, feed.url %>
       <%= link_to '', "https://twitter.com/#{feed.twitter}", :class => "icon-twitter" if feed.twitter %>
-      <%= link_to '', https://github.com/valkey-io/planet/blob/master/feed_filtering.md", :class => "icon-filter" if feed.key.end_with?("_filtered") %>
+      <%= link_to '', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md", :class => "icon-filter" if feed.key.end_with?("_filtered") %>
     </li>
 <% end %>
     <li><hr class='item-separator'></li>
