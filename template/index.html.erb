@@ -23,7 +23,7 @@
 
 <div id='navwrap'>
 <div id='nav'>
-  <p><center><a href="https://github.com/jfg956/valkey-planet/blob/main/credit_and_history.md#aws-open-source-credits"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS"></a></center></p>
+  <p><center><a href="https://github.com/valkey-io/planet/blob/main/credit_and_history.md#aws-open-source-credits"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS"></a></center></p>
 
   <p>Last Update:</p>
   <p class='small'><%= site.updated.to_datetime.rfc3339 if site.updated %></p>
@@ -34,12 +34,12 @@
   <p>Meta:</p>
   <ul class='metas small'>
     <li>Support Planet by following us: <%= link_to '', "https://x.com/PlanetValkeyCmT", :class => "icon-twitter" %></li>
-    <li><%= link_to "Abuse procedure", "https://github.com/jfg956/valkey-planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
-    <li><%= link_to "Aggregation and content policy", "https://github.com/jfg956/valkey-planet/blob/main/aggregation_and_content_policy.md" %></li>
-    <li><%= link_to "How to add / remove a feed", "https://github.com/jfg956/valkey-planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
+    <li><%= link_to "Abuse procedure", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
+    <li><%= link_to "Aggregation and content policy", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md" %></li>
+    <li><%= link_to "How to add / remove a feed", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
     <li>Maintained by <%= link_to "Jean-François Gagné", "https://linktr.ee/jfg.mysql" %></li>
-    <li>Sponsored by <%= link_to 'Aiven', "https://github.com/jfg956/valkey-planet/blob/master/credit_and_history.md#aiven-sponsorship" %></li>
-    <li>Helped by <%= link_to "many people", "https://github.com/jfg956/valkey-planet/blob/master/credit_and_history.md" %></li>
+    <li>Sponsored by <%= link_to 'Aiven', "https://github.com/valkey-io/planet/blob/master/credit_and_history.md#aiven-sponsorship" %></li>
+    <li>Helped by <%= link_to "many people", "https://github.com/valkey-io/planet/blob/master/credit_and_history.md" %></li>
     <li>Built with the <%= link_to "Pluto Feed Reader", "https://github.com/feedreader" %></li>
     <li><%= link_to "Font Awesome", "http://fontawesome.io" %> by Dave Gandy</li>
   </ul>
@@ -51,7 +51,7 @@
     <li><%= link_to "Planet PostgreSQL", "https://planet.postgresql.org/" %></li>
   </ul>
   <ul class='metas small'>
-    <li>(open <%= link_to "issue", "https://github.com/jfg956/valkey-planet/issues" %> for adding a data-related Planet)</li>
+    <li>(open <%= link_to "issue", "https://github.com/valkey-io/planet/issues" %> for adding a data-related Planet)</li>
   </ul>
 
   <p>Subscriptions:</p>
@@ -63,7 +63,7 @@
       <%= link_to '',  feed.feed_url, :class => "icon-rss-sign" %>
       <%= link_to feed.title, feed.url %>
       <%= link_to '', "https://twitter.com/#{feed.twitter}", :class => "icon-twitter" if feed.twitter %>
-      <%= link_to '', "https://github.com/oursqlcommunity-org/planet/blob/master/feed_filtering.md", :class => "icon-filter" if feed.key.end_with?("_filtered") %>
+      <%= link_to '', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md", :class => "icon-filter" if feed.key.end_with?("_filtered") %>
     </li>
 <% end %>
     <li><hr class='item-separator'></li>
@@ -79,9 +79,9 @@
 </div>
 
 <h1 style='margin: 0px 0px 0px 0px'><%= site.title %></h1>
-<h3 style='margin: 0px 0px 0px 0px'>A blog / news aggregator for the <%= link_to "Valkey", "https://valkey.io/" %> Community / Ecosystem</h3>
+<h3 style='margin: 0px 0px 0px 0px'>A blog / news aggregator (Planet) for the <%= link_to "Valkey", "https://valkey.io/" %> Community / Ecosystem</h3>
 
-<p>This is a demo of what a Blog / News Aggregator for the Valkey Community / Ecosystem would look like.</p>
+<p>This is a demo of what a Blog / News Aggregator (Planet) for the Valkey Community / Ecosystem would look like.</p>
 
 <div id="articles">
 <%
@@ -130,7 +130,7 @@
     </div>
   </article>
 <% end %>
-
+<hr class='item-separator'>
 </div>
 </body>
 </html>
