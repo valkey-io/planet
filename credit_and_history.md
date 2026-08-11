@@ -1,3 +1,6 @@
+
+<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
+
 # Inception
 
 Planet for the Valkey Community is a project initiated by Jean-François Gagné while working at [Aiven](https://aiven.io/).
@@ -5,6 +8,20 @@ Jean-François was already maintaining [Planet for the MySQL Community](https://
 and Aiven was involved in the bootstrapping of Valkey, so there was a match.  Also, J-F contacts at Percona,
 also involved in the bootstrapping of Valkey, hinted that this would be useful.  After a few hours of work,
 the Valkey Aggregator was live.
+
+<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
+
+When created, the GitHub repository of Planet for the Valkey Community was under 
+JFG's GitHub (`https://github.com/jfg956/valkey-planet/`).  It was later moved
+under the Valkey Organization (`https://github.com/valkey-io/planet/`).
+And for administrative reasons, this move was done via oursqlcommunity.org
+(`https://github.com/oursqlcommunity-org/valkey-planet/`).  Tracing the
+[PR](https://github.com/valkey-io/planet/pull/16) and
+[Merge-Commit](https://github.com/valkey-io/planet/commit/600486e198b3f803b1574b75e444670d0ff77d03)
+of the move for future reference.
+
+
+<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
 # Help
 
