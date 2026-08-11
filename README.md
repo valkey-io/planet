@@ -15,7 +15,7 @@ This repository contains the configuration required to generate the contents of
 
 The current version of this file can be found in (1).
 
-(1): https://github.com/jfg956/valkey-planet/blob/main/README.md
+(1): https://github.com/valkey-io/planet/blob/main/README.md
 
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
@@ -67,10 +67,10 @@ sudo gem install pluto
 1. Clone this repository.
 
 ```
-git clone https://github.com/jfg956/valkey-planet.git
+git clone https://github.com/valkey-io/planet.git
 ```
 
-2. In the directory of the clonned repository, to build the `valkey-demo`
+2. In the directory of the cloned repository, to build the `valkey-demo`
 template with output in the `html` directory, run this command (this updates the
 `planet.db` file or creates it)):
 
