@@ -11,7 +11,8 @@
 # Planet for the Valkey Community
 
 This repository contains the configuration required to generate the contents of
-[Planet for the Valkey Community](https://valkey-demo.oursqlcommunity.org/).
+[Planet for the Valkey Community](https://valkey-demo.oursqlcommunity.org/),
+a blog / news aggregator (Planet) for the Valkey Community / Ecosystem.
 
 The current version of this file can be found in (1).
 
