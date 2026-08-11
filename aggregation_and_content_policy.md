@@ -7,10 +7,10 @@ This document aims at bringing clarity to what should be included on Planet for
 the Valkey Community and how changes to the aggregated feeds are made.  The current
 version of the document can be found in (1).
 
-(1): https://github.com/jfg956/valkey-planet/blob/main/aggregation_and_content_policy.md
+(1): https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md
 
 The configuration file containing currently aggregated feeds is
-[planet.ini](https://github.com/jfg956/valkey-planet/blob/main/planet.ini).
+[planet.ini](https://github.com/valkey-io/planet/blob/main/planet.ini).
 
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
@@ -22,7 +22,7 @@ solving it directly with the author (there should be a link to their Twitter
 profile in the subscription list, or there is probably a way to comment on the
 problematic post).  If this fails, or if it is a kind of problem that cannot
 be solved with a discussion, open an
-[Issue](https://github.com/jfg956/valkey-planet/issues),
+[Issue](https://github.com/valkey-io/planet/issues),
 send an email to valkey-planet AT oursqlcommunity DOT org, or contact the
 [maintainer](https://twitter.com/jfg956) on Twitter.
 
@@ -48,12 +48,12 @@ The aggregator should contain articles that are relevant to the Valkey Community
 category or a tag feed instead of the default feed.
 
 - If it is not possible to submit a category or a tag feed,
-[filtering your feed](https://github.com/jfg956/valkey-planet/blob/main/feed_filtering.md)
+[filtering your feed](https://github.com/valkey-io/planet/blob/main/feed_filtering.md)
 is possible.
 
 - If the recent entries of a submitted feed contain a small amount of relevant
 content, it might be considered for
-[filtering](https://github.com/jfg956/valkey-planet/blob/main/feed_filtering.md).
+[filtering](https://github.com/valkey-io/planet/blob/main/feed_filtering.md).
 Authors will usually be contacted when filtering is implemented on their feed.
 
 
@@ -79,7 +79,7 @@ best to deal with this in an open and fair way.
 ## Adding / Removing a Feed
 
 If you want to add your feed, open an
-[Issue](https://github.com/jfg956/valkey-planet/issues)
+[Issue](https://github.com/valkey-io/planet/issues)
 providing:
 
 * the name for your blog,
@@ -89,9 +89,9 @@ providing:
 * any other information you think is relevant.
 
 Alternatively, for quicker processing, you can create a
-[Pull Request](https://github.com/jfg956/valkey-planet/pulls)
+[Pull Request](https://github.com/valkey-io/planet/pulls)
 containing the relevant changes to the
-[planet.ini](https://github.com/jfg956/valkey-planet/blob/main/planet.ini)
+[planet.ini](https://github.com/valkey-io/planet/blob/main/planet.ini)
 file.
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
