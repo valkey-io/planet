@@ -1,12 +1,7 @@
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
-(this repo is in the process of being moved)
- - source: https://github.com/jfg956/valkey-planet/
- - destination: https://github.com/valkey-io/
- - via: https://github.com/oursqlcommunity-org/
-
-(major edits will follow the move)
+(this repo has recently been moved, major edits to come)
 
 # Planet for the Valkey Community
 
