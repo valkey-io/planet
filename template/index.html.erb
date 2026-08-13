@@ -13,7 +13,7 @@
     -- <link rel="alternate" type="application/rss+xml" title="RSS feed" href="rss20.xml" /> -->
   <link rel="shortcut icon" href="/favicon.ico" />
 
-  <%= stylesheet_link_tag 'css/font-awesome' %>
+  <%= stylesheet_link_tag 'css/fontawesome-all' %>
   <%= stylesheet_link_tag 'css/blank' %>
 
   <script src='js/jquery-2.0.3.min.js'></script>
@@ -28,12 +28,12 @@
   <p>Last Update:</p>
   <p class='small'><%= site.updated.to_datetime.rfc3339 if site.updated %></p>
 
-  <p><i class='icon-rss-sign'></i> <%= link_to "Atom feed", "atom.xml" %></p>
+  <p><i class="fa-solid fa-square-rss"></i> <%= link_to "Atom feed", "atom.xml" %></p>
   <!-- <p><i class='icon-rss-sign'></i> <%= link_to "RSS 2.0 feed", "rss20.xml" %></p> -->
 
   <p>Meta:</p>
   <ul class='metas small'>
-    <li>Support Planet by following us: <%= link_to '', "https://x.com/PlanetValkeyCmT", :class => "icon-twitter" %></li>
+    <li>Support Planet by following us: <%= link_to '', "https://x.com/PlanetValkeyCmT", :class => "fa-brands fa-x-twitter" %></li>
     <li><%= link_to "Abuse procedure", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
     <li><%= link_to "Aggregation and content policy", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md" %></li>
     <li><%= link_to "How to add / remove a feed", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
@@ -41,7 +41,7 @@
     <li>Sponsored by <%= link_to 'Aiven', "https://github.com/valkey-io/planet/blob/master/credit_and_history.md#aiven-sponsorship" %></li>
     <li>Helped by <%= link_to "many people", "https://github.com/valkey-io/planet/blob/master/credit_and_history.md" %></li>
     <li>Built with the <%= link_to "Pluto Feed Reader", "https://github.com/feedreader" %></li>
-    <li><%= link_to "Font Awesome", "http://fontawesome.io" %> by Dave Gandy</li>
+    <li>Using <%= link_to "Font Awesome", "http://fontawesome.io" %> v7.3.1</li>
   </ul>
 
   <p>Planetarium:</p>
@@ -70,10 +70,10 @@
          filtered = false
       end %>
     <li>
-      <%= link_to '',  feed.feed_url, :class => "icon-rss-sign" %>
+      <%= link_to '',  feed.feed_url, :class => "fa-solid fa-square-rss" %>
       <%= link_to title, feed.url %>
-      <%= link_to '', "https://twitter.com/#{feed.twitter}", :class => "icon-twitter" if feed.twitter %>
-      <%= link_to '', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md", :class => "icon-filter" if filtered %>
+      <%= link_to '<small>(<i class="fa-solid fa-filter"></i>)</small>', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md" if filtered %>
+      <%= link_to ': <i class="fa-brands fa-x-twitter"></i>', "https://x.com/#{feed.twitter}" if feed.twitter %>
     </li>
 <% end %>
     <li><hr class='item-separator'></li>
@@ -113,8 +113,8 @@
 <% end %>
   <article class='item'>
     <h3 class='item-title'>
-      <i class='icon-caret-down item-collapse item-close item-opened'></i>
-      <i class='icon-caret-right item-expand item-open item-closed'></i>
+      <i class='fa-solid fa-caret-down  item-collapse item-close item-opened'></i>
+      <i class='fa-solid fa-caret-right item-expand   item-open  item-closed'></i>
       <%= link_to item.title, item.url %>
       <sup><small>(from <%= link_to title, item.feed.url %>)</small></sup>
     </h3>
