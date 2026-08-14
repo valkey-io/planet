@@ -73,7 +73,12 @@
       <%= link_to '',  feed.feed_url, :class => "fa-solid fa-square-rss" %>
       <%= link_to title, feed.url %>
       <%= link_to '<small>(<i class="fa-solid fa-filter"></i>)</small>', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md" if filtered %>
-      <%= link_to ': <i class="fa-brands fa-x-twitter"></i>', "https://x.com/#{feed.twitter}" if feed.twitter %>
+      <%= ':' if feed.rubygems || feed.meetup || feed.avatar || feed.location || feed.twitter %>
+      <%= link_to '<i class="fa-brands fa-mastodon"></i>',     "#{feed.rubygems}"               if feed.rubygems  %>
+      <%= link_to '<i class="fa-brands fa-bluesky"></i>',      "#{feed.meetup}"                 if feed.meetup    %>
+      <%= link_to '<i class="fa-brands fa-x-twitter"></i>',    "https://x.com/#{feed.twitter}"  if feed.twitter   %>
+      <%= link_to '<i class="fa-brands fa-linkedin-in"></i>',  "#{feed.avatar}"                 if feed.avatar    %>
+      <%= link_to '<i class="fa-solid  fa-link"></i>',         "#{feed.location}"               if feed.location  %>
     </li>
 <% end %>
     <li><hr class='item-separator'></li>
