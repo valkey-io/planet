@@ -41,12 +41,22 @@ err_file="$log_dir/pluto_${date_val}.err"
 touch $log_file
 touch $err_file
 
+# Rewrite ini file.
+# As explained in a comment in the ini file, rewrite to Pluto tags.
+sed_script="s/^  linkedin = /  avatar = /"
+sed_script="$sed_script;s/^  author_link = /  location = /"
+sed_script="$sed_script;s/^  bluesky = /  meetup = /"
+sed_script="$sed_script;s/^  mastodon = /  rubygems = /"
+rm -f planet.rewritten.ini
+sed -e "$sed_script" planet.ini > planet.rewritten.ini
+chmod a-w planet.rewritten.ini
+
 # Run things, with logging.
 {
   epoch_start="$(date +%s)"
 
   echo "$(date) - running pluto update."
-  pluto update
+  pluto update planet.rewritten.ini
   echo
 
   epoch_end="$(date +%s)"
@@ -54,7 +64,7 @@ touch $err_file
   echo
 
   echo "$(date) - running pluto merge."
-  pluto merge -t $template -o $html_dir
+  pluto merge -t $template -o $html_dir planet.rewritten.ini
   echo
 
   epoch_end="$(date +%s)"
