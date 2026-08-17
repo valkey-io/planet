@@ -23,7 +23,10 @@
 
 <div id='navwrap'>
 <div id='nav'>
+
   <p><center><a href="https://github.com/valkey-io/planet/blob/main/credit_and_history.md#aws-open-source-credits"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" alt="Powered by AWS"></a></center></p>
+
+  <p><center><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="planetMySQLComT" data-color="#FFDD00" data-emoji=""  data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script></center></p>
 
   <p>Last Update:</p>
   <p class='small'><%= site.updated.to_datetime.rfc3339 if site.updated %></p>
@@ -34,12 +37,14 @@
   <p>Meta:</p>
   <ul class='metas small'>
     <li>Support Planet by following us: <%= link_to '', "https://x.com/PlanetValkeyCmT", :class => "fa-brands fa-x-twitter" %></li>
+    <li>Support Planet by staring us: <%= link_to '<i class="fa-brands fa-github"></i>', "https://github.com/valkey-io/planet/" %></li>
+    <li>Financially support us on <%= link_to "Buy me a coffee", "https://buymeacoffee.com/planetmysqlcomt" %></li>
     <li><%= link_to "Abuse procedure", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
     <li><%= link_to "Aggregation and content policy", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md" %></li>
     <li><%= link_to "How to add / remove a feed", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
     <li>Maintained by <%= link_to "Jean-François Gagné", "https://linktr.ee/jfg.mysql" %></li>
-    <li>Sponsored by <%= link_to 'Aiven', "https://github.com/valkey-io/planet/blob/master/credit_and_history.md#aiven-sponsorship" %></li>
-    <li>Helped by <%= link_to "many people", "https://github.com/valkey-io/planet/blob/master/credit_and_history.md" %></li>
+    <li>Sponsored by <%= link_to 'Aiven', "https://github.com/valkey-io/planet/blob/main/credit_and_history.md#aiven-sponsorship" %></li>
+    <li>Helped by <%= link_to "many people", "https://github.com/valkey-io/planet/blob/main/credit_and_history.md" %></li>
     <li>Built with the <%= link_to "Pluto Feed Reader", "https://github.com/feedreader" %></li>
     <li>Using <%= link_to "Font Awesome", "http://fontawesome.io" %> v7.3.1</li>
   </ul>
@@ -57,9 +62,14 @@
   <p>Subscriptions:</p>
   <ul class='subscriptions small' >
     <li><hr class='item-separator'></li>
-    <!-- TODO: add separator between type of feeds (agg, aso, com, perso, news, ...). -->
 <%
+   prefix_old = ""
    site.feeds.each do |feed|
+
+      prefix_new = feed.key[0, feed.key.index("_")]
+      separator = prefix_old != prefix_new
+      prefix_old = prefix_new
+
       title = feed.title
       filtered = feed.key.end_with?("_filtered")
       if title.start_with?("_FI_ ")
@@ -69,10 +79,11 @@
          title = title[5, title.length-5]
          filtered = false
       end %>
+    <%= "<li><hr class='item-separator'></li>" if separator %>
     <li>
-      <%= link_to '',  feed.feed_url, :class => "fa-solid fa-square-rss" %>
+      <%= link_to '<i class="fa-solid fa-square-rss"></i>', feed.feed_url %>
       <%= link_to title, feed.url %>
-      <%= link_to '<small>(<i class="fa-solid fa-filter"></i>)</small>', "https://github.com/valkey-io/planet/blob/master/feed_filtering.md" if filtered %>
+      <%= link_to '<small>(<i class="fa-solid fa-filter"></i>)</small>', "https://github.com/valkey-io/planet/blob/main/feed_filtering.md" if filtered %>
       <%= ':' if feed.rubygems || feed.meetup || feed.avatar || feed.location || feed.twitter %>
       <%= link_to '<i class="fa-brands fa-mastodon"></i>',     "#{feed.rubygems}"               if feed.rubygems  %>
       <%= link_to '<i class="fa-brands fa-bluesky"></i>',      "#{feed.meetup}"                 if feed.meetup    %>
@@ -81,6 +92,8 @@
       <%= link_to '<i class="fa-solid  fa-link"></i>',         "#{feed.location}"               if feed.location  %>
     </li>
 <% end %>
+
+    <li><hr class='item-separator'></li>
     <li><hr class='item-separator'></li>
    </ul>
 </div>
