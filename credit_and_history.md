@@ -3,7 +3,8 @@
 
 # Inception
 
-Planet for the Valkey Community is a project initiated by Jean-François Gagné while working at [Aiven](https://aiven.io/).
+Planet for the Valkey Community is a project initiated by
+[Jean-François Gagné](https://linktr.ee/jfg.mysql) while working at [Aiven](https://aiven.io/).
 Jean-François was already maintaining [Planet for the MySQL Community](https://planet.oursqlcommunity.org/)
 and Aiven was involved in the bootstrapping of Valkey, so there was a match.  Also, J-F contacts at Percona,
 also involved in the bootstrapping of Valkey, hinted that this would be useful.  After a few hours of work,
@@ -28,14 +29,14 @@ of the move for future reference.
 ## Sysadmin help
 
 Maintaining a blog aggregator is not a lot of work, but it should not be on a single
-person. In addition to Jean-François Gagné, the following people have commit access to
+person. In addition to [Jean-François Gagné](https://linktr.ee/jfg.mysql), the following people have commit access to
 the repository and are able to make change to the website:
 
 * [Bogdan Petre](https://github.com/bogdanp05)
 
 ## Aiven Sponsorship
 
-Aiven offers monetary compensation for all employees who spend some of their free time working
+[Aiven](https://aiven.io/) offers monetary compensation for all employees who spend some of their free time working
 on open-source projects. Bogdan is a beneficiary of this program through his contributions
 to the Planet for the Valkey Community.
 
