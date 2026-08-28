@@ -16,6 +16,15 @@ The current version of this file can be found in (1).
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
+## Feed Policy
+
+The policy of what feeds are suitable for inclusion, along with guidance on
+how to propose changes to the feeds list, is available in the file
+[aggregation_and_content_policy.md](aggregation_and_content_policy.md).
+
+
+<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
+
 ## Software
 
 The system is built using [Planet Pluto](https://github.com/feedreader): a Free
@@ -86,15 +95,6 @@ files, run this command:
 ```
 pluto update
 ```
-
-
-<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
-
-## Feed Policy
-
-The policy of what feeds are suitable for inclusion, along with guidance on
-how to propose changes to the feeds list, is available in the file
-[aggregation_and_content_policy.md](aggregation_and_content_policy.md).
 
 
 <!-- EOF -->
