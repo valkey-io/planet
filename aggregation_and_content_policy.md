@@ -18,23 +18,12 @@ The configuration file containing currently aggregated feeds is
 ## Abuse Procedure
 
 If there is a problem with content on Planet for the Valkey Community, please try
-solving it directly with the author (there should be a link to their Twitter
-profile in the subscription list, or there is probably a way to comment on the
+solving it directly with the author (in the subscription list, there should be a
+link about how to contact them, or there is probably a way to comment on the
 problematic post).  If this fails, or if it is a kind of problem that cannot
 be solved with a discussion, open an
-[Issue](https://github.com/valkey-io/planet/issues),
-send an email to valkey-planet AT oursqlcommunity DOT org, or contact the
-[maintainer](https://twitter.com/jfg956) on Twitter.
-
-
-<!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
-
-## Author Availability Policy
-
-TBC...
-
-Note that email did not work well for Planet for the MySQL Community:
-- https://github.com/oursqlcommunity-org/planet/blob/master/aggregation_and_content_policy.md#author-availability-policy
+[Issue](https://github.com/valkey-io/planet/issues)
+or send an email to valkey-planet AT oursqlcommunity DOT org.
 
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
@@ -85,7 +74,7 @@ providing:
 * the name for your blog,
 * a link to your blog,
 * a link to the corresponding Atom or RSS feed,
-* your Twitter handle (or another way for publicly contacting you),
+* ways contacting you: Mastodon, BlueSky, Twitter, LinkedIn, email and/or others
 * any other information you think is relevant.
 
 Alternatively, for quicker processing, you can create a
