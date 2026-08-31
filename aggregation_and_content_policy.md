@@ -74,7 +74,7 @@ providing:
 * the name for your blog,
 * a link to your blog,
 * a link to the corresponding Atom or RSS feed,
-* ways contacting you: Mastodon, BlueSky, Twitter, LinkedIn, email and/or others
+* ways to contact you: Mastodon, BlueSky, Twitter, LinkedIn, email and/or others,
 * any other information you think is relevant.
 
 Alternatively, for quicker processing, you can create a
