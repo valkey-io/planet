@@ -8,7 +8,7 @@ lock=/tmp/pluto_fetch_n_merge.lock
 
 pluto_dir=/home/valkey-planets/planet.valkey.io
 html_dir=./html
-template=planet
+template=planet_valkey
 log_dir=./fnm_logs
 
 mode="${1-}"
