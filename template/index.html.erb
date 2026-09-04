@@ -82,8 +82,7 @@
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
          filtered = false
-      end
-%>
+      end %>
     <%= "<li><hr class='item-separator'></li>" if separator %>
     <li>
       <%= link_to '<i class="fa-solid fa-square-rss"></i>', feed.feed_url %>
@@ -125,8 +124,7 @@
          title = title[5, title.length-5]
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
-      end
-%>
+      end %>
 <% if new_date %>
   <h2 class='new-date'><%= item.updated.strftime('%A, %d. %B %Y') %></h2>
 <% else %>
