@@ -12,8 +12,8 @@ the Valkey Aggregator was live.
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
-When created, the GitHub repository of Planet Valkey was under 
-JFG's GitHub (`https://github.com/jfg956/valkey-planet/`).  It was later moved
+When created, the GitHub repository of Planet for the Valkey Community was under
+Jean-François Gagné's GitHub (`https://github.com/jfg956/valkey-planet/`).  It was later moved
 under the Valkey Organization (`https://github.com/valkey-io/planet/`).
 And for administrative reasons, this move was done via oursqlcommunity.org
 (`https://github.com/oursqlcommunity-org/valkey-planet/`).  Tracing the
@@ -37,6 +37,7 @@ the repository and are able to make change to the website:
 
 * [Bogdan Petre](https://github.com/bogdanp05)
 
+All sysadmins can be reached at planet@lists.valkey.io.
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
