@@ -1,12 +1,10 @@
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
-(this repo has recently been moved, major edits to come)
-
-# Planet for the Valkey Community
+# Planet Valkey
 
 This repository contains the configuration required to generate the contents of
-[Planet for the Valkey Community](https://valkey-demo.oursqlcommunity.org/),
+[Planet Valkey](https://planet.valkey.io/),
 a blog / news aggregator (Planet) for the Valkey Community / Ecosystem.
 
 The current version of this file can be found in (1).
@@ -51,7 +49,7 @@ of this README.
 ### A Planet Pluto Template
 
 Planet Pluto needs a template for generating static web pages.  The template of
-Planet for the Valkey Community can be found in the template directory of this
+Planet Valkey can be found in the template directory of this
 repository.
 
 This template was derived from the template of
