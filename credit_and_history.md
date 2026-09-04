@@ -37,7 +37,7 @@ the repository and are able to make change to the website:
 
 * [Bogdan Petre](https://github.com/bogdanp05)
 
-All sysadmins can be reached at planet@lists.valkey.io.
+All sysadmins can be reached at planet AT lists DOT valkey.io.
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
