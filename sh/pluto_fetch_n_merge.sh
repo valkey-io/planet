@@ -6,9 +6,9 @@ set -euo pipefail
 
 lock=/tmp/pluto_fetch_n_merge.lock
 
-pluto_dir=/home/valkey-planets/valkey-demo
+pluto_dir=/home/valkey-planets/planet.valkey.io
 html_dir=./html
-template=valkey-demo
+template=planet
 log_dir=./fnm_logs
 
 mode="${1-}"
