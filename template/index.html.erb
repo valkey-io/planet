@@ -111,6 +111,14 @@
 
 <p>This is a demo of what a Blog / News Aggregator (Planet) for the Valkey Community / Ecosystem would look like.</p>
 
+<p>(will be replaced by <%= link_to "Planet Valkey", "https://planet.valkey.io/" %>)
+<br>(update your bookmarks, because soon, this website will stop working)
+<br>(the reason for replacement is that the initial URL is on the wrong domain, and new name and URL are better)
+<br>(before this website stops working, announcments will be made, and service will slowly degrade to nudge migration)
+<br>(announcments will include posts in the feed to reach people not checking the website)
+<br>(degradations will include removing subscriptions, and reducing refresh frequency)
+<br>(feel free to follow progress and share feedback in this <%= link_to "GitHub Issue", "https://github.com/valkey-io/planet/issues/23" %>)</p>
+
 <div id="articles">
 <%
    items = site.items.latest.limit(100)
