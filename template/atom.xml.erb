@@ -11,19 +11,17 @@
   <link href="<%= site.url %>"/>
   <generator uri="http://feedreader.github.io/"><%= Pluto.generator %></generator>
   <subtitle>A blog / news aggregator (Planet) for the Valkey Community / Ecosystem</subtitle>
-  <author><name><%= site.title %></name><email>valkey-planet@oursqlcommunity.org</email></author>
+  <author><name><%= site.title %></name><email>planet@lists.valkey.io</email></author>
 <%
    items = site.items.latest.limit(100)
    ItemCursor.new( items ).each do |item, new_date, new_feed|
-
-      break if item.published < (Date.today - 120)
-
       title = item.feed.title
       if title.start_with?("_FI_ ")
          title = title[5, title.length-5]
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
-      end %>
+      end
+%>
   <entry>
     <title type="html"><%= CGI.escapeHTML(item.title) %></title>
     <link href="<%= CGI.escapeHTML(item.url) %>"/>
