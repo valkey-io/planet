@@ -123,15 +123,13 @@
 <%
    items = site.items.latest.limit(100)
    ItemCursor.new( items ).each do |item, new_date, new_feed|
-
-      break if item.published < (Date.today - 120)
-
       title = item.feed.title
       if title.start_with?("_FI_ ")
          title = title[5, title.length-5]
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
-      end %>
+      end
+%>
 <% if new_date %>
   <h2 class='new-date'><%= item.updated.strftime('%A, %d. %B %Y') %></h2>
 <% else %>
