@@ -36,7 +36,11 @@
 
   <p>Meta:</p>
   <ul class='metas small'>
-    <li>Support Planet by following us: <%= link_to '', "https://x.com/PlanetValkeyCmT", :class => "fa-brands fa-x-twitter" %></li>
+    <li>Support Planet by following us:
+        <%= link_to '<i class="fa-brands fa-mastodon"></i>',  "https://fosstodon.org/@Planet_Valkey" %>
+        <%= link_to '<i class="fa-brands fa-bluesky"></i>',   "https://bsky.app/profile/Planet-Valkey.fosstodon.org.ap.brid.gy" %>
+        <%= link_to '<i class="fa-brands fa-x-twitter"></i>', "https://x.com/Planet_Valkey" %>
+    </li>
     <li>Support Planet by staring us: <%= link_to '<i class="fa-brands fa-github"></i>', "https://github.com/valkey-io/planet/" %></li>
     <li>Financially support us on <%= link_to "Buy me a coffee", "https://buymeacoffee.com/planetmysqlcomt" %></li>
     <li><%= link_to "Abuse procedure", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
@@ -78,7 +82,8 @@
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
          filtered = false
-      end %>
+      end
+%>
     <%= "<li><hr class='item-separator'></li>" if separator %>
     <li>
       <%= link_to '<i class="fa-solid fa-square-rss"></i>', feed.feed_url %>
