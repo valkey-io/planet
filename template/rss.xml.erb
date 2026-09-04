@@ -13,22 +13,20 @@
   <title><%= site.title %></title>
   <link><%= site.url %></link>
   <description>A blog / news aggregator (Planet) for the Valkey Community / Ecosystem</description>
-  <webMaster>valkey-planet@oursqlcommunity.org</webMaster>
+  <webMaster>planet@lists.valkey.io</webMaster>
   <lastBuildDate><%= site.updated.rfc822 if site.updated %></lastBuildDate>
   <generator><%= Pluto.generator %> - http://feedreader.github.io/</generator>
   <atom:link href="<%= site.url %>atom.xml" rel="self" type="application/atom+xml" />
 <%
    items = site.items.latest.limit(100)
    ItemCursor.new( items ).each do |item, new_date, new_feed|
-
-      break if item.published < (Date.today - 120)
-
       title = item.feed.title
       if title.start_with?("_FI_ ")
          title = title[5, title.length-5]
       elsif title.start_with?("_NF_ ")
          title = title[5, title.length-5]
-      end %>
+      end
+%>
 <item>
   <title><%= CGI.escapeHTML(item.title) %></title>
   <link><%= CGI.escapeHTML(item.url) %></link>
