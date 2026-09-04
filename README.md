@@ -73,18 +73,18 @@ sudo gem install pluto
 git clone https://github.com/valkey-io/planet.git
 ```
 
-2. In the directory of the cloned repository, to build the `valkey-demo`
+2. In the directory of the cloned repository, to build the `planet_valkey`
 template with output in the `html` directory, run this command (this updates the
 `planet.db` file or creates it)):
 
 ```
-pluto build planet.ini -t valkey-demo -o ./html
+pluto build planet.ini -t planet_valkey -o ./html
 ```
 
 * To generate the static files without fetching the feeds, run this command:
 
 ```
-pluto merge -t valkey-demo -o ./html
+pluto merge -t planet_valkey -o ./html
 ```
 
 * To fetch the feeds and update `planet.db` without generating static
