@@ -23,7 +23,7 @@ link about how to contact them, or there is probably a way to comment on the
 problematic post).  If this fails, or if it is a kind of problem that cannot
 be solved with a discussion, open an
 [Issue](https://github.com/valkey-io/planet/issues)
-or send an email to valkey-planet AT oursqlcommunity DOT org.
+or send an email to planet AT lists DOT valkey.io.
 
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
@@ -86,7 +86,7 @@ file.
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
 If you have a good reason for not creating an issue or a PR, you can send an email
-to valkey-planet AT oursqlcommunity DOT org.  In your email, please explain why you
+to planet AT lists DOT valkey.io.  In your email, please explain why you
 did not create an issue.  Do not send an email for anonymity reasons, as your name
 will be mentioned in a corresponding issue or pull request (normally, addition
 and removal of feeds are done openly, but there might be exceptions for abuses
