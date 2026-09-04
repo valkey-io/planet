@@ -3,8 +3,8 @@
 
 # Aggregation and Content Policy
 
-This document aims at bringing clarity to what should be included on Planet for
-the Valkey Community and how changes to the aggregated feeds are made.  The current
+This document aims at bringing clarity to what should be included on Planet
+Valkey and how changes to the aggregated feeds are made.  The current
 version of the document can be found in (1).
 
 (1): https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md
@@ -17,13 +17,13 @@ The configuration file containing currently aggregated feeds is
 
 ## Abuse Procedure
 
-If there is a problem with content on Planet for the Valkey Community, please try
+If there is a problem with content on Planet Valkey, please try
 solving it directly with the author (in the subscription list, there should be a
 link about how to contact them, or there is probably a way to comment on the
 problematic post).  If this fails, or if it is a kind of problem that cannot
 be solved with a discussion, open an
 [Issue](https://github.com/valkey-io/planet/issues)
-or send an email to valkey-planet AT oursqlcommunity DOT org.
+or send an email to planet AT lists DOT valkey.io.
 
 
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
@@ -86,7 +86,7 @@ file.
 <!-- 6789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 -->
 
 If you have a good reason for not creating an issue or a PR, you can send an email
-to valkey-planet AT oursqlcommunity DOT org.  In your email, please explain why you
+to planet AT lists DOT valkey.io.  In your email, please explain why you
 did not create an issue.  Do not send an email for anonymity reasons, as your name
 will be mentioned in a corresponding issue or pull request (normally, addition
 and removal of feeds are done openly, but there might be exceptions for abuses

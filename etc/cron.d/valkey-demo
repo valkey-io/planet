@@ -1,4 +1,0 @@
-# The first element of the path is the directory where the pluto binary is located
-PATH=/usr/local/bin:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
-
-20,50 * * * * valkey-planets /usr/bin/flock -n /home/valkey-planets/valkey-demo/run/cronlock /home/valkey-planets/valkey-demo/sh/pluto_fetch_n_merge.sh wait
