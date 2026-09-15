@@ -29,8 +29,7 @@ a { text-decoration: none; }
     padding-left: 0; }
   #nav ul.planetarium {
     list-style-type: square;
-    /*  margin-left: 0;
-        padding-left: 0;  */ }
+    margin-top: -1em; }
   #nav ul.subscriptions {
     list-style-type: none;
     margin-left: 0;
