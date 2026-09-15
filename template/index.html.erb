@@ -28,24 +28,35 @@
 
   <p><center><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="planetMySQLComT" data-color="#FFDD00" data-emoji=""  data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script></center></p>
 
-  <p>Last Update:</p>
-  <p class='small'><%= site.updated.to_datetime.rfc3339 if site.updated %></p>
+<% if site.updated  %>
+  <p class='metas small' style="text-align: center;">Last Updated: <%= site.updated.to_datetime.rfc3339 %></p>
+<% end %>
 
-  <p><i class="fa-solid fa-square-rss"></i> <%= link_to "Atom feed", "atom.xml" %></p>
-  <!-- <p><i class='icon-rss-sign'></i> <%= link_to "RSS 2.0 feed", "rss20.xml" %></p> -->
+  <p style="font-size: 1.25rem; font-weight: bold;"><i class="fa-solid fa-square-rss"></i> <%= link_to "Atom feed", "atom.xml" %></p>
+  <!-- We do one thing well: atom !  There is a rss feed, but not advertise, see comment at the top of the feed.
+  <p style="font-size: 1.25rem; font-weight: bold;"><i class='icon-rss-sign'></i> <b><%= link_to "RSS 2.0 feed", "rss20.xml" %></p>
+  -->
 
-  <p>Meta:</p>
-  <ul class='metas small'>
-    <li>Support Planet by following us:
+  <p style="font-size: 0.9rem;">Suggested Feed Readers:</p>
+  <p style="font-size: 0.75rem; margin-top: -1.25em";>(open an <%= link_to "issue", "https://github.com/valkey-io/planet/issues" %> for adding a reader)</p>
+  <ul class='planetarium small'">
+    <li><%= link_to "CommaFeed", "https://www.commafeed.com/" %></li>
+    <li><%= link_to "Feeder", "https://feeder.co/" %></li>
+    <li><%= link_to "Feedly", "https://feedly.com/news-reader" %></li>
+  </ul>
+
+  <p style="font-size: 0.9rem;">Meta:
+  <ul class='planetarium small'">
+    <li>Follow and support Planet:
         <%= link_to '<i class="fa-brands fa-mastodon"></i>',  "https://fosstodon.org/@Planet_Valkey" %>
         <%= link_to '<i class="fa-brands fa-bluesky"></i>',   "https://bsky.app/profile/Planet-Valkey.fosstodon.org.ap.brid.gy" %>
         <%= link_to '<i class="fa-brands fa-x-twitter"></i>', "https://x.com/Planet_Valkey" %>
     </li>
-    <li>Support Planet by staring us: <%= link_to '<i class="fa-brands fa-github"></i>', "https://github.com/valkey-io/planet/" %></li>
-    <li>Financially support us on <%= link_to "Buy me a coffee", "https://buymeacoffee.com/planetmysqlcomt" %></li>
+    <li>Star & support Planet: <%= link_to '<i class="fa-brands fa-github"></i>', "https://github.com/valkey-io/planet/" %></li>
+    <li>Help sustain Planet on <%= link_to "Buy Me a Coffee", "https://buymeacoffee.com/planetmysqlcomt", style: "font-style: italic;" %></li>
     <li><%= link_to "Abuse procedure", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#abuse-procedure" %></li>
     <li><%= link_to "Aggregation and content policy", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md" %></li>
-    <li><%= link_to "How to add / remove a feed", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
+    <li><%= link_to "Add or remove a feed", "https://github.com/valkey-io/planet/blob/main/aggregation_and_content_policy.md#adding--removing-a-feed" %></li>
     <li>Maintained by <%= link_to "Jean-François Gagné", "https://linktr.ee/jfg.mysql" %></li>
     <li>Sponsored by <%= link_to 'Aiven', "https://github.com/valkey-io/planet/blob/main/credit_and_history.md#aiven-sponsorship" %></li>
     <li>Helped by <%= link_to "many people", "https://github.com/valkey-io/planet/blob/main/credit_and_history.md" %></li>
@@ -53,17 +64,15 @@
     <li>Using <%= link_to "Font Awesome", "http://fontawesome.io" %> v7.3.1</li>
   </ul>
 
-  <p>Planetarium:</p>
-  <ul class='planetarium small'>
+  <p style="font-size: 0.9rem;">Data-Related Planets:</p>
+  <p style="font-size: 0.75rem;  margin-top: -1.25em";>(open an <%= link_to "issue", "https://github.com/valkey-io/planet/issues" %> for adding a Planet)</p>
+  <ul class='planetarium small'">
     <li><%= link_to "Planet for the MySQL Community", "https://planet.oursqlcommunity.org/" %></li>
     <li><%= link_to "Planet MariaDB", "https://mariadb.org/planet/" %></li>
     <li><%= link_to "Planet PostgreSQL", "https://planet.postgresql.org/" %></li>
   </ul>
-  <ul class='metas small'>
-    <li>(open <%= link_to "issue", "https://github.com/valkey-io/planet/issues" %> for adding a data-related Planet)</li>
-  </ul>
 
-  <p>Subscriptions:</p>
+  <p style="font-size: 1.25rem; font-weight: bold;">Sources / Feeds:</p>
   <ul class='subscriptions small' >
     <li><hr class='item-separator'></li>
 <%
@@ -111,8 +120,8 @@
 </div>
 
 <h1 style='margin: 0px 0px 0px 0px'><%= site.title %></h1>
-<h3 style='margin: 0px 0px 0px 0px'>A blog / news aggregator (Planet) for the <%= link_to "Valkey", "https://valkey.io/" %> Community / Ecosystem</h3>
-
+<h3 style='margin: 0px 0px 0px 0px'>A single destination for <%= link_to "Valkey", "https://valkey.io/" %> content.</h3>
+<p>Instead of following dozens of websites or relying on social media algorithms, get the latest Valkey updates here.<p>
 <p>(for replacing Planet for the Valkey Community / https://valkey-demo.oursqlcommunity.org/)</p>
 
 <div id="articles">
