@@ -5,7 +5,7 @@
 
 This repository contains the configuration required to generate the contents of
 [Planet Valkey](https://planet.valkey.io/),
-a blog / news aggregator (Planet) for the Valkey Community / Ecosystem.
+a single destination for Valkey content.
 
 The current version of this file can be found in (1).
 
