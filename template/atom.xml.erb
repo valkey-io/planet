@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 
 <!-- Useful documentation: https://validator.w3.org/feed/docs/atom.html -->
-<!-- Useful tools: http://www.feedvalidator.org/ & https://validator.w3.org/ -->
+<!-- Useful tools: http://www.feedvalidator.org/ & https://validator.w3.org/feed/ -->
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id><%= site.url %></id>
@@ -10,7 +10,7 @@
   <link rel="self" href="<%= site.url %>atom.xml"/>
   <link href="<%= site.url %>"/>
   <generator uri="http://feedreader.github.io/"><%= Pluto.generator %></generator>
-  <subtitle>A blog / news aggregator (Planet) for the Valkey Community / Ecosystem</subtitle>
+  <subtitle>A single destination for Valkey content</subtitle>
   <author><name><%= site.title %></name><email>planet@lists.valkey.io</email></author>
 <%
    items = site.items.latest.limit(100)
