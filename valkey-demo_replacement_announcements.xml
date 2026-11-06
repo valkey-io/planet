@@ -1,0 +1,18 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/valkey-io/planet/blob/main/valkey-demo_decommission_feed.xml</id>
+    <title>Valley-Demo Replacement Announcements</title>
+    <link href="https://github.com/valkey-io/planet/blob/main/valkey-demo_decommission_feed.xml"/>
+    <link rel="self" href="https://raw.githack.com/valkey-io/planet/main/valkey-demo_replacement_announcements.xml"/>
+    <updated>2026-11-06T00:00:00+00:00</updated>
+    <entry>
+        <title>Reminder: update your bookmarks because Planet Valkey replaces Planet for the Valkey Community</title>
+        <link href="https://fosstodon.org/@jfg956/117570849583698986"/>
+        <content type="html">If you are seeing this, you are using the legacy Planet for the Valkey Community.  Update your bookmarks to Planet Valkey because soon, the legacy website will be retired.</content>
+        <id>https://fosstodon.org/@jfg956/117570849583698986</id>
+        <updated>2026-11-06T00:00:00+00:00</updated>
+        <author>
+          <name>Jean-François Gagné</name>
+          <uri>https://fosstodon.org/@jfg956</uri>
+        </author>
+    </entry>
+</feed>
