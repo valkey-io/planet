@@ -7,12 +7,6 @@ robots.txt  robots.txt.erb
 
 css/blank.css
 
-image/view-headlines.png
-image/view-snippets.png
-
-js/jquery-2.0.3.min.js
-js/blank.js
-
 favicon.ico
 
 css/fontawesome-all.css
