@@ -3,7 +3,18 @@
     <title>Valley-Demo Replacement Announcements</title>
     <link href="https://github.com/valkey-io/planet/blob/main/valkey-demo_decommission_feed.xml"/>
     <link rel="self" href="https://raw.githack.com/valkey-io/planet/main/valkey-demo_replacement_announcements.xml"/>
-    <updated>2026-11-06T00:00:00+00:00</updated>
+    <updated>2026-11-16T00:00:00+00:00</updated>
+    <entry>
+        <title>Reminder 2 of 3: update your bookmarks because Planet Valkey replaces Planet for the Valkey Community</title>
+        <link href="https://fosstodon.org/@jfg956/117626849760768742"/>
+        <content type="html">You are using the legacy aggregator.  It has fewer subscriptions and only updates once a day.  Update your bookmarks to Planet Valkey because soon, the legacy website will be retired.</content>
+        <id>https://fosstodon.org/@jfg956/117626849760768742</id>
+        <updated>2026-11-16T00:00:00+00:00</updated>
+        <author>
+          <name>Jean-François Gagné</name>
+          <uri>https://fosstodon.org/@jfg956</uri>
+        </author>
+    </entry>
     <entry>
         <title>Reminder: update your bookmarks because Planet Valkey replaces Planet for the Valkey Community</title>
         <link href="https://fosstodon.org/@jfg956/117570849583698986"/>
